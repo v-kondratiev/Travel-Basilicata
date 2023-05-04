@@ -1,0 +1,51 @@
+.nav__list a {
+  color: $color-2;
+}
+
+.nav__list a.active ::after,
+.nav__list a:hover::after {
+  content: "";
+  left: 0;
+  bottom: -3px;
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.footer {
+  padding: 20px 0 50px;
+  background: linear-gradient(132.05deg, rgba(76, 222, 255, 0.58) -17.38%, #083a70 78.4%);
+
+  .footer a{
+    color:rgba(15, 31, 28, 0.5);
+  }
+
+  .container {
+
+    .nav {
+
+      .nav__logo {
+
+        .logo--footer a {
+          color: #FF7C4E;
+        }
+      }
+
+      .nav__login  {
+
+        .sign-up {
+          color: white;
+
+          &:hover {
+            color: #FF7B4E;
+            transition: color 0.2s ease-in;
+
+          }
+        }
+      }
+    }
+  }
+}

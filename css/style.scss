@@ -1,0 +1,147 @@
+@import "reset.css";
+@import "header.css";
+@import "menu-icon-wrapper.css";
+@import "destination";
+@import "customers";
+@import "cta";
+@import "subscribe";
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+////////////Media////////////
+@media (max-width: 1270px) {
+  .destination {
+
+    .container-right {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+
+  .destination__content {
+
+  }
+
+  .destination__slider {
+    width: 900px;
+
+  }
+
+
+}
+
+@media (max-width: 1000px) {
+  .header {
+    .container {
+      .header__top {
+        .nav {
+          .nav__logo {
+          }
+
+          .nav__list {
+            display: none;
+          }
+
+          .nav__login {
+            display: none;
+          }
+
+          .nav__toggle {
+            display: block;
+          }
+        }
+      }
+
+      .header__row {
+
+        .header__content {
+
+        }
+
+        .header__image {
+          img {
+            right: -156px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 850px) {
+  .header {
+    padding-top: 20px;
+    height: auto;
+
+
+    .container {
+
+      .header__top {
+
+
+      }
+
+      .header__row {
+        flex-direction: column;
+
+        .header__content {
+          .header__badge {
+            margin-bottom: 5px;
+            font-size: 16px;
+            padding: 8px 20px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 7px;
+          }
+
+          .header__title {
+            margin-bottom: 20px;
+            font-size: 35px;
+            max-width: 470px;
+          }
+
+          .header__text {
+            margin-bottom: 40px;
+            max-width: 400px;
+            font-size: 20px;
+
+          }
+
+          .header__btn {
+            padding: 20px 30px;
+            margin-top: 200px;
+            font-size: 22px;
+            border-radius: 18px;
+
+          }
+
+          .header__image img {
+
+
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+  .header__row {
+    padding-top: 30px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,133 @@
+$color-1: #0F1F1C;
+$color-2: rgba(15, 31, 28, 0.5);
+$color-3: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+
+%st-btn {
+  padding: 27px 47px;
+  margin-bottom: 68px;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  background: $color-3;
+  border-radius: 27px;
+
+  &:hover {
+    color: #dca314;
+    transition: color 0.2s ease-in;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.destination {
+  padding: 96px 0 100px;
+  overflow-x: hidden;
+
+  .container-right {
+    padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+    .destination__row {
+      display: flex;
+      column-gap: 50px;
+
+      .destination__content {
+        max-width: 456px;
+
+        .destination__title {
+          margin-bottom: 15px;
+          font-weight: 600;
+          font-size: 55px;
+
+          span {
+            font-weight: 600;
+            font-size: 30px;
+
+          }
+
+        }
+
+        .destination__text {
+          margin-bottom: 60px;
+          font-weight: 500;
+          font-size: 25px;
+          color: $color-1;
+
+        }
+
+        .btn {
+          @extend %st-btn;
+
+        }
+
+      }
+
+      .destination__slider {
+        width: 1110px;
+        flex-shrink: 0;
+        .slider {
+          position: relative;
+          height: 456px;
+
+          .owl-carousel {
+
+
+            .slider__item {
+              margin-top: 27px;
+              width: 350px;
+              height: 402px;
+              object-fit: cover;
+              border-radius: 35px;
+              transition: 0.2s;
+            }
+
+            .center .slider__item {
+              margin-top: 0;
+              width: 380px;
+              height: 456px;
+              border-radius: 35px;
+
+            }
+
+          }
+
+          .slider__btn {
+            display: block;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $color-3;
+            z-index: 9;
+
+          }
+
+          .slider__btn.slider__btn--prev {
+            left: -27px;
+
+          }
+
+          .slider__btn.slider__btn--next {
+            right: -27px;
+
+          }
+
+        }
+
+
+
+      }
+
+
+    }
+  }
+}

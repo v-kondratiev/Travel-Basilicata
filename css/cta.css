@@ -1,0 +1,45 @@
+.cta {
+  padding: 100px 0;
+}
+.cta .container .cta__plate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 580px;
+  padding: 40px 15px;
+  background-color: #FFFFFF;
+  border-radius: 60px;
+}
+.cta .container .cta__plate .cta__title {
+  font-weight: 500;
+  font-size: 45px;
+  color: rgb(15, 31, 28);
+  margin-bottom: 30px;
+  text-align: center;
+}
+.cta .container .cta__plate .cta_text {
+  font-weight: 400;
+  font-size: 30px;
+  color: rgba(15, 31, 28, 0.5);
+  margin-bottom: 60px;
+}
+.cta .container .cta__plate .cta__button a {
+  padding: 27px 47px;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+  border-radius: 27px;
+  margin-bottom: 0;
+}
+.cta .container .cta__plate .cta__button a:hover {
+  color: #dca314;
+  transition: color 0.2s ease-in;
+}
+.cta .container .cta__plate .cta__button a:active {
+  position: relative;
+  top: 1px;
+}
+
+/*# sourceMappingURL=cta.css.map */
